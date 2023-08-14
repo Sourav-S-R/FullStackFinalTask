@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: monospace;
+        scroll-behavior: smooth;
+    }
+    body{
+        min-height: 100vh;
+        background-image: linear-gradient(rgb(210, 157, 21), rgb(215, 215, 226));
+        object-fit: cover;
+        overflow-x: hidden;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 30px 100px;
+        width: 100%;
+        align-items: center;
+        z-index: 10000;
+    }
+    header .logo{
+        color: white;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 2em;
+        text-transform: uppercase;
+        transition-duration: .4s;
+    }
+
+    header ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header li{
+        list-style: none;
+        margin-left: 20px;
+    }
+
+    header ul li a{
+        text-decoration: none;
+        padding: 6px 15px;
+        color: white;
+        border-radius: 25px;
+        transition-duration: .5s;
+    }
+    header ul li a:hover{
+    /* header ul li a.active{ */
+        background: #ffffff;
+        color: rgb(0, 0, 0);
+    }
+    section{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        padding: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section ::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+        background: linear-gradient(to top, rgba(236, 172, 52, 0.916) ,rgb(214, 195, 57));
+        z-index: 100;
+    }
+
+    section img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #spaceshuttle{
+        position: absolute;
+        width: 180px;
+        height: 130px;
+        top: 19px;
+        
+    }
+
+    #astronaut{
+        position: absolute;
+        opacity: 0.9;
+        width: 150px;
+        height: 150px;
+        align-items: center;
+        margin-left: 50%;
+        margin-top: 200px;
+    }
+
+    section img #marsSoil{
+        z-index: 10;
+    }
+
+    #caption{
+        position: fixed;
+        color: rgb(255, 255, 255);
+        font-size: xx-large;
+        font-size: 7.5vw;
+        overflow: hidden;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        z-index: -5;
+    }
+
+    #viewSpace{
+        text-decoration: none;
+        padding: 6px 15px;
+        color: rgb(0, 0, 0);
+        border-radius: 25px;
+        padding: 0;
+        text-decoration: underline;
+    }
+
+    #viewSpace :hover{
+        background: #ffffff;
+        color: rgb(0, 0, 0);
+    }
+    .second-section{
+        position: relative;
+        padding: 50px;
+        background: rgb(214, 188, 92);
+        font-family: cursive;
+        color: rgb(255, 255, 255);
+        
+    }
+    .second-section h2{
+        font-size: xx-large;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 3.5rem;
+    }
+
+    .row1, .row2, .row3, .row4{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        font-family: monospace;
+    }
+    .saturn{
+        padding-top: 50px;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="logo">GalaxyPlus.in</h1>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">LOG IN</a></li>
+            <li><a href="#">SIGN UP</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="Astronaut.png" alt="" id="astronaut" height="70px" width="30px">
+        <h2 id="caption">Let's Go On a Space Adventure</h2>
+        <img src="spaceshuttle.png" alt="" id="spaceshuttle">
+        <img src="marsSoil.png" alt="" id="marsSoil">
+    </section>
+    <div class="second-section" id="second-section">
+        <h2>The Cosmos..</h2>
+        <p>The Sun was the first celestial object determined to give off X rays; rocket-borne radiation counters measured X-ray emissions from its corona (outer atmosphere) in 1949. The Sun, however, is an intrinsically weak X-ray source, and it is prominent only because it is so close to the Earth.
+            <br>The unambiguous detection of X rays from other more distant ordinary stars was achieved 30 years later by the orbiting HEAO 2 satellite known as the Einstein Observatory. It detected more than 150 ordinary stars by the X-radiation from their coronas. 
+            <br>The stars observed cover almost the entire range of star-types—main sequence, red giants, and white dwarfs. Most stars emit only an extremely small fraction of their energy in the form of X rays. Young, massive stars are the most powerful X-ray emitters. 
+            <br>They usually occur in nebulas, and their hot coronal gases can expand to make a nebula itself a detectable X-ray source.</p>
+        <br>
+        <p>A more powerful type of X-ray source is a supernova remnant, the gaseous shell ejected during the violent explosion of a dying star. The first to be observed was the Crab Nebula, the remnant of a supernova explosion whose radiation reached the Earth in AD 1054. It is, however, a very atypical remnant because its X rays are synchrotron radiation produced by high-speed electrons from a central pulsar.
+            <br>The X-radiation from most other supernova remnants emanates instead from hot gas. The gases ejected by a supernova explosion are relatively cool, but as they sweep outward at a speed of several thousand kilometres per second they accumulate interstellar gas. The strong shock wave heats this gas to a temperature high enough for X-ray emission—namely, about 10,000,000 K.</p>
+        <br>
+        <p id="link-text">If You Wanna Know More About Space Click the Link below to Direct you to viewSpace.org Where You can Learn More Facts about Space.</p>
+        <a id="viewSpace" href="https://viewspace.org/" target="_blank">viewSpace</a>
+    </div>
+    <footer>
+        <div class="planet-class" style="background-color: rgb(214, 188, 92);">
+            <!-- <marquee behavior="scroll" direction="left" scrollamount="20">
+            </marquee> -->
+            <H1>Stars in Our Solar System</H1>
+            <div class="row1">
+                <div class="sun">
+                    <img src="sun.png" width="190px" alt="">
+                    <h3>Sun</h3>
+                </div>
+                <div class="moon">
+                    <img src="moon.png" width="190px" alt="">
+                    <h3>Moon[Celestial Body]</h3>
+                </div>
+            </div>
+            <br>
+            <H1>Planets in Our Solar System</H1>
+            <div class="row2">
+                <div class="mercury">
+                    <img src="Mercury.png" width="190px" alt="">
+                    <h3>Mercury</h3>
+                </div>
+                <div class="venus">
+                    <img src="venus.png" width="190px" alt="">
+                    <h3>Venus</h3>
+                </div>
+                <div class="earth">
+                    <img src="Earth.png" width="190px" alt="">
+                    <h3>Earth</h3>
+                </div>
+            </div>
+            <br>
+            <div class="row3">
+                <div class="mars">
+                    <img src="mars.png" width="190px" alt="">
+                    <h3>Mars</h3>
+                </div>
+                <div class="jupiter">
+                    <img src="jupiter.png" width="190px" alt="">
+                    <h3>Jupiter</h3>
+                </div>
+                <div class="saturn">
+                    <img src="saturn.png" width="250px" alt="">
+                    <h3>Saturn</h3>
+                </div>
+            </div>
+            <br>
+            <div class="row4">
+                <div class="uranus">
+                    <img src="uranus.png" width="190px" alt="">
+                    <h3>Uranus</h3>
+                </div>
+                <div class="neptune">
+                    <img src="neptune.png" width="190px" alt="">
+                    <h3>Neptune</h3>
+                </div>
+                <div class="pluto">
+                    <img src="pluto.png" width= "210px" alt="">
+                    <h3>Pluto</h3>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        let astronaut = document.getElementById('astronaut');
+        let caption = document.getElementById('caption');
+        let marsSoil = document.getElementById('marsSoil');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            astronaut.style.left = value *.35 +'px';
+            caption.style.left = value *1.5 +'px';
+        })
+    </script>
+</body>
+</html>
